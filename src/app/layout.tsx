@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 // 动态生成 metadata，支持配置更新后的标题变化
 export async function generateMetadata(): Promise<Metadata> {
-  let siteName = process.env.SITE_NAME || 'MoonTV';
+  let siteName = process.env.SITE_NAME || 'FoxLane';
   if (
     process.env.NEXT_PUBLIC_STORAGE_TYPE !== 'd1' &&
     process.env.NEXT_PUBLIC_STORAGE_TYPE !== 'upstash'
@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: siteName,
-    description: '影视聚合',
+    description: '影视聚合 MovieBox',
     manifest: '/manifest.json',
   };
 }
